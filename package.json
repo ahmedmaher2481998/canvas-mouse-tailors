@@ -1,0 +1,14 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:ts": "tsc -w --sourceMap --module amd --pretty --outFile app.js index.ts",
+    "start:parcel": "parcel index.html",
+    "start": "concurrently 'start:ts' 'start:parcel'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
